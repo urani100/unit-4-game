@@ -3,39 +3,52 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Jewels Collector</title>
+    <title>Lucky Charms Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"  href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css"  href="assets/css/reset.css" />
-    <link rel="stylesheet" type="text/css"  href="assets/css/style.css" />
     <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css"  href="assets/css/style.css" />
 
-    <style>
-        .jewels{
-            width: 100px;
-            height: 100px;
-            border: 1px solid blue; 
-            display: inline-block;
-        }
-        .points{
-            border: 1px solid blue; 
-            width: 100px;
-            height: 100px;
-
-        }
-    
-    </style>
 </head>
+
+
 <body>
+    <div class="container">
+        <header>
+            <h1>Lucky Charms Collector</h1>
+        </header>
+        <div class="row firstRow">
+            <div class="col-12 col-md-6">
+                <br>
+               <h3>Rules of the game</h3>
+               <br>
+               <p>
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa cum debitis veritatis accusamus vel impedit voluptates excepturi, autem sint itaque, dicta repellendus, consequatur tempora aliquid optio? Totam maxime deleniti modi.
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nemo quaerat sint, necessitatibus voluptates possimus deserunt reiciendis, saepe nulla aperiam facere cum est ut fugit quibusdam animi ducimus pariatur sequi?
+               </p>
 
-    <h1>Random Number <span class="mRandomNumber"> </span></h1>
-    <h1>Score: <span class="score"> </span></h1> 
-    <h1>Win:   <span class="win"> </span></h1>
-    <h1>Loss: <span class="loss"> </span></h1>
-    <div class='points'></div>
-    
+            </div>
+            <div class="col-12 col-md-6 text">
+                <h1>Random Number 
+                    <p><span class="mRandomNumber"> </span></p>
+                </h1>
+            </div>
 
+        </div>
+        <div class="row secondRow text">
+            <div class="col-12 col-md-6">
+                <h1>Score: <span class="score"> </span></h1> 
+                <h1>Win:   <span class="win"> </span></h1>
+                <h1>Loss: <span class="loss"> </span></h1>
+            </div>
+            <div class ="col-12 col-md-6">
+                <div class='points'></div>
+            </div>
 
-    
+        </div>
+    </div>
+    <div class="fixed-bottom stickyFooter"> &copy;Urani</div>
 </body>
 </html>

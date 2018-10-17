@@ -1,0 +1,54 @@
+.jewels{
+    width: 150px;
+    /* height: 150px; */
+    border: 1px solid blue; 
+   
+    }
+.mRandomNumber{
+    margin: 140px;
+    text-align: center;
+
+}
+.text{
+    padding-top: 50px;
+    text-align: center;
+
+}
+.points{
+    border: 1px solid blue; 
+    width: 100px;
+    height: 100px;
+    }
+
+.container{
+    /* border: 1px solid orangered; */
+    height: 600px;
+    width: 960px;
+    margin: 0 auto 0 auto;
+    
+}
+header{
+    border: 1px solid blue;
+    padding: 40px;
+    text-align: center;
+}
+.firstRow{
+    border: 1px solid gold;
+    height: 300px;
+}
+.secondRow{
+    border: 1px solid gold;
+    height: 300px;
+}
+.col-md-6{
+    border: 1px solid greenyellow;
+}
+
+p{
+    text-align: justify;
+    word-spacing: 2px;
+}
+
+footer{
+    text-align: center;
+}

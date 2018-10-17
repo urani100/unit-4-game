@@ -2,10 +2,10 @@ $(document).ready(function(){
 
     //place everything in an object
 
-    var images=['assets/images/bird.jpg', 
-                'assets/images/part-1.png',
-                'assets/images/part-2.png',
-                'assets/images/part-3.png'];
+    var images=['assets/images/owl.jpg', 
+                'assets/images/hedgehog.jpg',
+                'assets/images/squirrel.jpg',
+                'assets/images/rabbit.jpg'];
     var arrPoints = []; // var arrPoints = new Array(4) does not work... first element is "empty"
     var arrPointLength = 4;
     var score = 0;
@@ -49,7 +49,7 @@ $(document).ready(function(){
     body.addClass('jewels');
     body.attr('src', images[i]);
     body.attr('data-value', arrPoints[i]);
-    $('.points').append(body);
+    $('.points').append(body).css('display', 'inline-block');;
    }
 
 //If at one point the score equates the the "master random number" the user wins
@@ -94,7 +94,4 @@ $(document).ready(function(){
         compare();
     })
 
-    
-
-   
 })
