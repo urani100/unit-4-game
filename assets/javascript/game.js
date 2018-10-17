@@ -49,7 +49,7 @@ $(document).ready(function(){
     body.addClass('jewels');
     body.attr('src', images[i]);
     body.attr('data-value', arrPoints[i]);
-    $('.points').append(body).css('display', 'inline-block');;
+    $('.points').append(body).css('display', 'inline-block');
    }
 
 //If at one point the score equates the the "master random number" the user wins

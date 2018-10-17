@@ -1,36 +1,41 @@
 .jewels{
-    width: 150px;
-    /* height: 150px; */
-    border: 1px solid blue; 
+    width: 130px;
+    /* height: 200px;  */
+    /* padding: 40px; */
+    margin-left: 60px; 
+    /* border: 1px solid blue;  */
    
     }
-.mRandomNumber{
-    margin: 140px;
-    text-align: center;
-
-}
 .text{
-    padding-top: 50px;
     text-align: center;
-
+    font-size: 60px;
+    font-family: 'PT Serif', serif;
 }
-.points{
-    border: 1px solid blue; 
-    width: 100px;
-    height: 100px;
-    }
+.mRandomNumber{
+    margin-left: 170px;
+    font-family: 'PT Serif', serif;
+}
+/* .points{
+     border: 1px solid blue;  
+    width: 100px; 
+    height: 100px; 
+    margin: 50px; 
+    /* font-family: 'PT Serif', serif; 
+    } */
 
 .container{
     /* border: 1px solid orangered; */
-    height: 600px;
+    /* height: 600px; */
     width: 960px;
     margin: 0 auto 0 auto;
     
 }
 header{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    font-size: 100px;
     padding: 40px;
     text-align: center;
+    font-family: 'PT Serif', serif;
 }
 .firstRow{
     border: 1px solid gold;
@@ -47,8 +52,10 @@ header{
 p{
     text-align: justify;
     word-spacing: 2px;
+    font-family: 'PT Serif', serif;
 }
 
 footer{
     text-align: center;
+    font-family: 'PT Serif', serif;
 }
