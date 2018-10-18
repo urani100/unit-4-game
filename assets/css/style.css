@@ -25,17 +25,13 @@ header{
     }
     .charms{
         background-color: #4056a1;
-        
     }
 
 .text{
     text-align: center;
     font-size: 60px;
-   
 }
 .mRandomNumber{
-    border: 1px solid #D79922;
-    border-radius: 30%; 
     color: #f13c20;
     margin-left: 170px;
     font-size: 70px;
