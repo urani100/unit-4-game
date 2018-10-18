@@ -1,21 +1,24 @@
 $(document).ready(function(){
 
     //place everything in an object
+var game={
+    images: ['assets/images/owl.jpg', 
+    'assets/images/hedgehog.jpg',
+    'assets/images/squirrel.jpg',
+    'assets/images/rabbit.jpg'],
+    arrPoints = [], // var arrPoints = new Array(4) does not work... first element is "empty"
+    arrPointLength = 4,
+    score = 0,
+    randomNumber = 0,
+    points = 0,
+var total = 0;
+var win = 0;
+var loss = 0;
+var winGame = false;
+var lossGame = false;
 
-    var images=['assets/images/owl.jpg', 
-                'assets/images/hedgehog.jpg',
-                'assets/images/squirrel.jpg',
-                'assets/images/rabbit.jpg'];
-    var arrPoints = []; // var arrPoints = new Array(4) does not work... first element is "empty"
-    var arrPointLength = 4;
-    var score = 0;
-    var randomNumber = 0;
-    var points = 0;
-    var total = 0;
-    var win = 0;
-    var loss = 0;
-    var winGame = false;
-    var lossGame = false;
+}
+   
     
    
     //genarate a random master number
@@ -57,12 +60,10 @@ $(document).ready(function(){
    var compare = function(){
     //    debugger;
        if(total=== randomNumber){
-           alert(total + "  you win")
            win++
            $(".win").text(win);
            winGame = true;
         }else if(total > randomNumber){
-            alert(total + "  You loose");
             loss++;
             $(".loss").text(loss);
             lossGame = true;
