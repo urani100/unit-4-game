@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-    //place everything in an object
 var game={
     images: ['assets/images/owl.jpg', 
     'assets/images/hedgehog.jpg',
@@ -52,7 +51,8 @@ var game={
         }
     },
     
-    initialSetUp: function(){
+    // set up initial game
+    setUp: function(){
     // call random numbers
     this.randomNumber= this.generateRandomNumber();
     //set up array
@@ -62,7 +62,7 @@ var game={
         var body = $('<img>');
         body.addClass('jewels');
         body.attr('src', this.images[i]);
-        body.attr('data-value', arrPoints[i]);
+        body.attr('data-value', this.arrPoints[i]);
         $('.points').append(body).css('display', 'inline-block');
        }
     },
@@ -75,17 +75,18 @@ var game={
         this.total = 0;
         this.winGame = false;
         this.lossGame = false;
-        this.randomNumber = generateRandomNumber();
+        this.randomNumber = this.generateRandomNumber();
         this.feedPointArray();
         $('.score').empty();
-    }
+    },
 
 }//end of object
    
     
-game.initialSetUp();
+    // call game set up
+     game.setUp();
 
-   //associate clicks to points add points... evaluate points 
+   //on clicks function
    $('.jewels').on("click", function(){
        if(game.winGame || game.lossGame){
         game.reset();
@@ -96,4 +97,4 @@ game.initialSetUp();
         game.compare();
     })
 
-})// end of document.resdy
+})// end of document.ready
